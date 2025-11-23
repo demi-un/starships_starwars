@@ -6,8 +6,11 @@
 на главной странице список кораблей, нажав на корабль открывается его описание
 
 ## Запуск
-- клонируйте репозиторий
+- клонируйте репозиторий: `git clone https://github.com/demi-un/starships_starwars`
 - откройте проект в IDE
-- активируйте venv
-- установите библиотеки: pip install -r requirements.txt
-- запустите проект: python3 manage.py runserver
+- создайте venv: macos: `python3 -m venv venv`
+- активируйте venv: macos: `source venv/bin/activate`
+- установите библиотеки: `pip install -r requirements.txt`
+- перейдите в директорию с проектом: `cd starwars`
+- запустите проект: `python3 manage.py runserver`
+- перейдите по ссылке: `http://127.0.0.1:8000/`
