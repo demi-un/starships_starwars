@@ -16,4 +16,4 @@ def main_page(request):
 
 def starship(request, id):
     starship = starships_list[id]
-    return render(request, "starships/starship.html", starship)
+    return render(request, "starships/starship.html", {'starship': starship})
