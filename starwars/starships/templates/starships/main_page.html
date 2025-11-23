@@ -16,19 +16,17 @@
 <body>
     {% comment %} side menu {% endcomment %}
     <aside>
-        <h1>starships list</h1>
-
-        <img src="{% static 'starships/img/aside.jpg' %}" alt="aside", width="330">
-
-        {% comment %} ships list {% endcomment %}
-        <p>starship1 name</p>
-        <p>starship2 name</p>
-        <p>...</p>
+        <span class="aside_title">starships list</span>
+        <ul>
+            <a href="{% url 'starship' %}">starship1 name</a>
+            <a href="{% url 'starship' %}">starship2 name</a>
+            <a href="{% url 'starship' %}">...</a>
+        </ul>
     </aside>
 
     <main>
 
-        <h1>Main page</h1>
+        <img src="{% static 'starships/img/aside.jpg' %}" alt="aside">
 
     </main>
 
