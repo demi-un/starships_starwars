@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,10 +7,10 @@
     <title>{{ starship.name }}</title>
 
     {% comment %} css {% endcomment %}
-    {% comment %} <link rel="stylesheet" href="{% static 'starships/css/main_page.css' %}"> {% endcomment %}
+    <link rel="stylesheet" href="{% static 'starships/css/starship.css' %}">
 
     {% comment %} logo {% endcomment %}
-    {% comment %} <link rel="icon" href="{% static 'starships/img/logo.jpg' %}">  {% endcomment %}
+    <link rel="icon" href="{% static 'starships/img/logo.jpg' %}"> 
 </head>
 <body>
     <h1>{{ starship.name }}</h1>

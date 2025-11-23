@@ -1,0 +1,12 @@
+body {
+    background: #2c2c2c;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    color: antiquewhite;
+    font-size: 25px;
+}
