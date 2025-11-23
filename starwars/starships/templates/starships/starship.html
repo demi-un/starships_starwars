@@ -3,10 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starship name</title>
+    <title>{{ starship.name }}</title>
+
+    {% comment %} css {% endcomment %}
+    {% comment %} <link rel="stylesheet" href="{% static 'starships/css/main_page.css' %}"> {% endcomment %}
+
+    {% comment %} logo {% endcomment %}
+    {% comment %} <link rel="icon" href="{% static 'starships/img/logo.jpg' %}">  {% endcomment %}
 </head>
 <body>
-    <h1>Starship name</h1>
-    <p>characteristic</p>
+    <h1>{{ starship.name }}</h1>
+    <ul>
+        <li>Model: {{ starship.model }}</li>
+        <li>Manufacturer: {{ starship.manufacturer }}</li>
+        <li>Cost: {{ starship.cost_in_credits }}</li>
+    </ul>
 </body>
 </html>

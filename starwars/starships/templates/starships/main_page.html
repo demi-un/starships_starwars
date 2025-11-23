@@ -18,9 +18,12 @@
     <aside>
         <span class="aside_title">starships list</span>
         <ul>
-            <a href="{% url 'starship' %}">starship1 name</a>
-            <a href="{% url 'starship' %}">starship2 name</a>
-            <a href="{% url 'starship' %}">...</a>
+            {% for starship in starships_list %}
+                <a href="{% url 'starship' forloop.counter0 %}">
+                    {{ starship.name }}
+                </a>
+                <br>
+            {% endfor %}
         </ul>
     </aside>
 
