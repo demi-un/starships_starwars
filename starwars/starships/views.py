@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+
 
 def main_page(request):
-    return HttpResponse('starships_list')
+    return render(request, 'starships/main_page.html')
