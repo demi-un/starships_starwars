@@ -4,13 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Main page</title>
-    <link rel="stylesheet" href="{% static "starships/css/main_page.css" %}">
+
+    {% comment %} css {% endcomment %}
+    <link rel="stylesheet" href="{% static 'starships/css/main_page.css' %}">
+
+    {% comment %} logo {% endcomment %}
+    <link rel="icon" href="{% static 'starships/img/logo.jpg' %}"> 
 </head>
 <body>
-    <h1>Starships list</h1>
-    <p>starship1 name</p>
-    <p>starship2 name</p>
-    <p>...</p>
+    {% comment %} side menu {% endcomment %}
+    <aside>
+        <h1>starships list</h1>
+
+        <img src="{% static 'starships/img/aside.jpg' %}" alt="aside", width="330">
+
+        {% comment %} ships list {% endcomment %}
+        <p>starship1 name</p>
+        <p>starship2 name</p>
+        <p>...</p>
+    </aside>
+
+    <main>
+
+        <h1>Main page</h1>
+
+    </main>
+
 </body>
 </html>
