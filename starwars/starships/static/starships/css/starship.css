@@ -2,6 +2,13 @@ body {
     background: #2c2c2c;
 }
 
+img {
+    width: 500px;
+    float: left;
+
+    margin-right: 30px;
+}
+
 h1 {
     color: burlywood;
     font-size: 50px;
@@ -15,4 +22,18 @@ ul {
 ul li {
     color: antiquewhite;
     font-size: 25px;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 25px;
+    color: aliceblue;
+    display: block;
+    transition: tarnsform .3s ease;
+}
+
+footer a:hover {
+    color: #eb5959;
+    text-decoration: none;
+    transform: scale(1.05);
 }
